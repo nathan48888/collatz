@@ -74,6 +74,7 @@ def collatz_eval(i, j):
                     y = (3 * y) + 1
                     cycle_list.append(y)
 
+            assert len(cycle_list) > 0
             length = len(cycle_list)
             lengths_list.append(length)
             if len(maxes_dict) < 10000:
