@@ -18,7 +18,13 @@ def collatz_read(s):
     return a list of two ints, representing the beginning and end of a range, [i, j]
     """
     a = s.split()
-    return [int(a[0]), int(a[1])]
+
+    assert int(a[0]) > 0
+    assert int(a[1]) > 0
+
+    lst = [int(a[0]), int(a[1])]
+    
+    return sorted(lst)
 
 # ------------
 # collatz_eval
@@ -34,6 +40,8 @@ def collatz_eval(i, j):
     lengths_list = []
 
     for x in range(i, j+1):
+
+        assert x > 0
         
         cycle_list = [x]
         
