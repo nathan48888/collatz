@@ -10,6 +10,16 @@
 # collatz_read
 # ------------
 
+global maxes_dict
+
+maxes_dict = {1: 1}
+
+def optimize(num):
+    if num in maxes_dict:
+        return True
+    else:
+        return False
+
 
 def collatz_read(s):
     """
@@ -42,25 +52,36 @@ def collatz_eval(i, j):
     for x in range(i, j+1):
 
         assert x > 0
-        
-        cycle_list = [x]
-        
-        while x != 1:
-        
-            if x % 2 == 0:
-                x = x / 2
-                cycle_list.append(x)
-        
-            else:
-                x = (3 * x) + 1
-                cycle_list.append(x)
 
-        length = len(cycle_list)
-        lengths_list.append(length)
+        y = x
 
+        opti_check = optimize(x)
 
+        if opti_check:
+            lengths_list.append(maxes_dict[x])
+
+        else:
+        
+            cycle_list = [y]
+            
+            while y != 1:
+            
+                if y % 2 == 0:
+                    y = y / 2
+                    cycle_list.append(y)
+            
+                else:
+                    y = (3 * y) + 1
+                    cycle_list.append(y)
+
+            length = len(cycle_list)
+            lengths_list.append(length)
+            if len(maxes_dict) < 10000:
+                maxes_dict[x] = length
+
+    
     return max(lengths_list)
-
+   
 # -------------
 # collatz_print
 # -------------
