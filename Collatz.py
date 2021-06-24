@@ -12,9 +12,7 @@
 
 global maxes_dict
 
-# Populate cache with cycle length of 1 (1) 
-# Because the while loop will not execute with a value of 1
-maxes_dict = {1: 1}
+maxes_dict = {1: 1}     # Populate with cycle length for 1 because while loop will not execute for 1
 
 def optimize(num):
     if num in maxes_dict:
@@ -31,8 +29,7 @@ def collatz_read(s):
     """
     a = s.split()
 
-    # Confirm inputs are positive
-    assert int(a[0]) > 0
+    assert int(a[0]) > 0        # Confirm inputs are positive
     assert int(a[1]) > 0
 
     lst = [int(a[0]), int(a[1])]
@@ -51,8 +48,7 @@ def collatz_eval(i, j):
     return the max cycle length of the range [i, j]
     """
 
-    # Store all cycle lengths in interval
-    lengths_list = []
+    lengths_list = []   # Store all cycle lengths in interval
 
     for x in range(i, j+1):
 
@@ -62,15 +58,12 @@ def collatz_eval(i, j):
 
         opti_check = optimize(x)
 
-        # Use values stored in cache if possible
-        if opti_check:
+        if opti_check:      # Use values stored in cache if possible
             lengths_list.append(maxes_dict[x])
 
         else:
             
-            # Store all instances of y in loop
-            # The total number of instances is the cycle length
-            cycle_list = [y]
+            cycle_list = [y]    # The length of cycle_list will be the cycle length
             
             while y != 1:
             
@@ -82,17 +75,14 @@ def collatz_eval(i, j):
                     y = (3 * y) + 1
                     cycle_list.append(y)
 
-            # Confirm cycle length is greater than zero
-            assert len(cycle_list) > 0
+            assert len(cycle_list) > 0      # Confirm cycle length is greater than zero
             length = len(cycle_list)
             lengths_list.append(length)
 
-            # Store cycle length of x in cache
-            if len(maxes_dict) < 10000:
+            if len(maxes_dict) < 10000:     # Store cycle length for x in cache
                 maxes_dict[x] = length
 
-    # Return greatest cycle length in interval
-    return max(lengths_list)
+    return max(lengths_list)    # Return greatest cycle length in interval
    
 # -------------
 # collatz_print
