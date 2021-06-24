@@ -2,7 +2,7 @@
 
 # ---------------------------
 # projects/collatz/Collatz.py
-# Copyright (C) 
+# Copyright (C)
 # Glenn P. Downing
 # ---------------------------
 
@@ -12,7 +12,9 @@
 
 global maxes_dict
 
-maxes_dict = {1: 1}     # Populate with cycle length for 1 because while loop will not execute for 1
+# Populate with cycle length for 1 because while loop will not execute for 1
+maxes_dict = {1: 1}
+
 
 def optimize(num):
     if num in maxes_dict:
@@ -33,7 +35,7 @@ def collatz_read(s):
     assert int(a[1]) > 0
 
     lst = [int(a[0]), int(a[1])]
-    
+
     return sorted(lst)
 
 # ------------
@@ -62,20 +64,22 @@ def collatz_eval(i, j):
             lengths_list.append(maxes_dict[x])
 
         else:
-            
-            cycle_list = [y]    # The length of cycle_list will be the cycle length
-            
+
+            # The length of cycle_list will be the cycle length
+            cycle_list = [y]
+
             while y != 1:
-            
+
                 if y % 2 == 0:
                     y = y / 2
                     cycle_list.append(y)
-            
+
                 else:
                     y = (3 * y) + 1
                     cycle_list.append(y)
 
-            assert len(cycle_list) > 0      # Confirm cycle length is greater than zero
+            # Confirm cycle length is greater than zero
+            assert len(cycle_list) > 0
             length = len(cycle_list)
             lengths_list.append(length)
 
@@ -83,7 +87,7 @@ def collatz_eval(i, j):
                 maxes_dict[x] = length
 
     return max(lengths_list)    # Return greatest cycle length in interval
-   
+
 # -------------
 # collatz_print
 # -------------

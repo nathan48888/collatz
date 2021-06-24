@@ -43,7 +43,7 @@ $ cat RunCollatz.out
 $ python -m pydoc -w Collatz"
 # That creates the file Collatz.html
 """
-         
+
 
 '''
                                                     cProfile output
@@ -57,5 +57,3 @@ $ python -m pydoc -w Collatz"
         1    0.000    0.000    0.000    0.000 {built-in method builtins.exec}
         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
 '''
-
-

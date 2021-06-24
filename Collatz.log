@@ -1,0 +1,128 @@
+commit 84c441ec05a47d8db2e7cc9c789a00af5f9c721b
+Author: Shawyan Mozaffar <smozaffar@utexas.edu>
+Date:   Thu Jun 24 15:40:36 2021 -0500
+
+    Added cProfile output
+
+commit 95386f0aa7d995c53a11bb7674d7045e7112e661
+Author: Nathan Hardham <nhardham@gmail.com>
+Date:   Thu Jun 24 08:26:03 2021 -0500
+
+    remote path != local path, fix
+
+commit 52d0b23c2f56b3092db66059d94d92581d87c96a
+Author: Nathan Hardham <nhardham@gmail.com>
+Date:   Thu Jun 24 07:37:45 2021 -0500
+
+    Change block comments to inline comments
+
+commit 0b8118160faf960e11341e529f9f084497a6ab43
+Author: Nathan Hardham <nhardham@gmail.com>
+Date:   Thu Jun 24 07:23:16 2021 -0500
+
+    Finish documentation
+
+commit 640db285d39fac39fc09a151e995e9f4188abf4a
+Author: Nathan Hardham <nhardham@gmail.com>
+Date:   Thu Jun 24 07:15:14 2021 -0500
+
+    Overwrite contents of TestCollatz.out with contents of TestCollatz.tmp
+
+commit cf88b29e8e8fd1ed0df28f6a7eccb4f7fd2b2b44
+Author: Shawyan Mozaffar <smozaffar@utexas.edu>
+Date:   Tue Jun 22 16:59:51 2021 -0500
+
+    Added a post-condition to eval funciton
+
+commit aeae71030a51ec177999f5cfa19741bdbd532f92
+Author: Shawyan Mozaffar <smozaffar@utexas.edu>
+Date:   Tue Jun 22 16:46:35 2021 -0500
+
+    Cache optimization implemented and Acceptance Test File Debugged
+
+commit 72d0ab4562f95300c6cd914cf03bac8ac2c46379
+Author: Shawyan Mozaffar <smozaffar@utexas.edu>
+Date:   Tue Jun 22 15:38:38 2021 -0500
+
+    Updated corner cases for acceptance tests
+
+commit 3799ac4cab1f22a078bb1832ab5ee1099ff3fee9
+Author: Shawyan Mozaffar <smozaffar@utexas.edu>
+Date:   Tue Jun 22 13:06:44 2021 -0500
+
+    Added accpetance tests; also tests for corner cases
+
+commit 87de045d10fd91ae12978baee2df72b52a206636
+Author: Nathan Hardham <nhardham@gmail.com>
+Date:   Tue Jun 22 10:13:01 2021 -0500
+
+    Added Assertions to check pre/post-conditions
+
+commit 84e3a8b00e0887af2901ebc9cf75a12dfeeef596
+Merge: d96d148 53025d5
+Author: Nathan Hardham <nhardham@gmail.com>
+Date:   Tue Jun 22 09:55:32 2021 -0500
+
+    Merge branch 'main' of https://gitlab.com/nhardham/cs330e-collatz
+
+commit d96d1484ee887769d2c42e72215af1a7deebf289
+Author: Nathan Hardham <nhardham@gmail.com>
+Date:   Tue Jun 22 09:55:16 2021 -0500
+
+    Added unit tests for corner/failure cases
+
+commit 53025d5d5d2a13c76f361b1f4ad47be07a667f62
+Author: Nathan Hardham <nhardham@gmail.com>
+Date:   Tue Jun 22 09:51:58 2021 -0500
+
+    Updated unit tests for corner/failure cases
+
+commit 761424f8f62af219add590c87361bfeae1f750c2
+Merge: 5cf0cdf c21c44d
+Author: Shawyan Mozaffar <smozaffar@utexas.edu>
+Date:   Mon Jun 21 18:57:06 2021 -0500
+
+    "first pull attempt"
+
+commit 5cf0cdf813aee362da75304e57182f6fb1d2a178
+Author: Shawyan Mozaffar <smozaffar@utexas.edu>
+Date:   Mon Jun 21 18:56:39 2021 -0500
+
+    adjusted given unit tests
+
+commit c21c44df085df2312fb180f9036c971dce3ad0ab
+Merge: 5063f22 bad5e65
+Author: Nathan Hardham <nhardham@gmail.com>
+Date:   Mon Jun 21 17:43:10 2021 -0500
+
+    Merge branch 'main' of https://gitlab.com/nhardham/cs330e-collatz
+
+commit 5063f2253a4dd8bc136b14a98ae7e4f0d0e8aa72
+Author: Nathan Hardham <nhardham@gmail.com>
+Date:   Mon Jun 21 17:42:25 2021 -0500
+
+    Updates collatz_eval unit tests
+
+commit bad5e655a007542e03032afc847e724e67ff0f49
+Author: Shawyan Mozaffar <smozaffar@utexas.edu>
+Date:   Mon Jun 21 17:41:01 2021 -0500
+
+    Updated Unit Tests
+
+commit 5f0885a0a2b1a332ed8ac9c09b7cf8e954d46425
+Author: Shawyan Mozaffar <smozaffar@utexas.edu>
+Date:   Mon Jun 21 16:19:40 2021 -0500
+
+    Updated Collatz Algorithm
+
+commit 171d7c8cf0fec8b77b34c8b57d21f176a9f87fda
+Author: Fares Fraij <fares@cs.utexas.edu>
+Date:   Thu Jun 3 14:48:30 2021 -0500
+
+    first commit
+
+commit 43e04beca948a84d7d2ed96d2f9fb78704d75adc
+Author: Fares Fraij <fares@utexas.edu>
+Date:   Thu Jun 3 19:47:02 2021 +0000
+
+    Initial commit

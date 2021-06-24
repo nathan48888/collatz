@@ -2,7 +2,7 @@
 
 # -------------------------------
 # projects/collatz/TestCollatz.py
-# Copyright (C) 
+# Copyright (C)
 # Glenn P. Downing
 # -------------------------------
 
@@ -32,7 +32,7 @@ class TestCollatz (TestCase):
         i, j = collatz_read(s)
         self.assertEqual(i,  1)
         self.assertEqual(j, 10)
-    
+
     def test_read_2(self):
         s = "0 5\n"
         with self.assertRaises(AssertionError):
@@ -116,7 +116,8 @@ class TestCollatz (TestCase):
 # main
 # ----
 
-if __name__ == "__main__": #pragma: no cover
+
+if __name__ == "__main__":  # pragma: no cover
     main()
 
 """ #pragma: no cover
