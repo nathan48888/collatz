@@ -43,3 +43,19 @@ $ cat RunCollatz.out
 $ python -m pydoc -w Collatz"
 # That creates the file Collatz.html
 """
+         
+
+'''
+                                                    cProfile output
+
+         3 function calls in 0.000 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.000    0.000 Collatz.py:15(<module>)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.exec}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+'''
+
+
